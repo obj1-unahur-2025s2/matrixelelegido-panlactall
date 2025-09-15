@@ -36,3 +36,21 @@ test "Vitalidad de Morfeo despues de un salto"{
   assert.equals(6,morfeo.vitalidad())
   assert.notThat(morfeo.estaCansado())
 }
+
+describe "testeamos a Trinity" {
+
+  test "Trinity es el elegido" {
+    assert.notThat(trinity.esElegido())
+  }
+
+}
+
+test "vitalidad inicial de Trinity"{
+  assert.equals(0, trinity.vitalidad())
+}
+test "Vitalidad de Trinity despues de un salto"{
+  trinity.saltar()
+  trinity.saltar()
+  trinity.saltar()
+  assert.equals(0, trinity.vitalidad())
+}
