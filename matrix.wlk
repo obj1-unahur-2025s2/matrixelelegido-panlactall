@@ -8,5 +8,17 @@ method vitalidad()= energia * 0.1
 }
 
 object morfeo {
-  method esElegido() = false
+method esElegido() = false
+var vitalidad = 8
+var cansado = false
+method saltar() {
+    vitalidad = (vitalidad -1).max(0)
+    cansado = !cansado
+}
+method vitalidad() = vitalidad
+method estaCansado() = cansado
+}
+
+object trinity {
+  
 }
