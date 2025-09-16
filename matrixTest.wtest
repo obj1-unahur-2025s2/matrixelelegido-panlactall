@@ -54,3 +54,13 @@ test "Vitalidad de Trinity despues de un salto"{
   trinity.saltar()
   assert.equals(0, trinity.vitalidad())
 }
+
+describe "Testeamos la Nave" {
+  test "cantidad de pasajeros inicial de la nave" {
+    assert.equals(3, nave.cantidadDePasajeros())
+  }
+  
+  test "pasajeros con mayor vitalidad al inicio" {
+    assert.equals(neo, nave.pasajeroConMayorVitalidad())
+  }
+}

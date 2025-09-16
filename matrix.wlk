@@ -25,3 +25,9 @@ object trinity {
       }
   method esElegido() = false  
 }
+
+object nave {
+  const pasajeros = #{neo, morfeo, trinity}
+  method cantidadDePasajeros() = pasajeros.size()
+  method pasajeroConMayorVitalidad() = pasajeros.max({p=>p.vitalidad()}) 
+}
